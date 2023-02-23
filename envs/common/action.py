@@ -195,6 +195,10 @@ class DiscreteMetaAction(ActionType):
 
     def act(self, action: int) -> None:
         # print(">>>>>", action.shape)
+        if not isinstance(action, int):
+            print(action)
+            exit()
+            int(action)
         self.controlled_vehicle.act(self.actions[action])
 
 

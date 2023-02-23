@@ -37,6 +37,8 @@ class HighwayEnv(AbstractEnv):
             "action": {
                 # "type": "DiscreteMetaAction",
                 "type": "ContinuousAction", # TODO
+                # "lateral": False
+                # "longitudinal": False
             },
             "lanes_count": 4,
             "vehicles_count": 50,
